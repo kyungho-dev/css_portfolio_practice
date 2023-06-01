@@ -35,6 +35,9 @@
 }
 
 /* Typography */
+/*
+  Typography : 웹사이트 전반에 쓰인 text에 대한 style 세팅
+*/
 
 h1 {
   font-size: var(--font-large);
@@ -75,4 +78,32 @@ p {
     -> border-box는 padding을 줬을때
     width와 height이 패딩을 포함해도 동일한 width 와 height 이 되도록
   */
+}
+
+/*
+  body 태그에 설정
+*/
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Navbar */
+#navbar {
+  /*
+    flex를 줘서 박스들이 옆으로 올수 있도록 해줌
+   */
+  display: flex;
+  justify-content: space-between;
+  /* 사이에 간격두고 배치 */
+  background-color: var(--color-pink);
 }
